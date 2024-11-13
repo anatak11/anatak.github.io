@@ -1,0 +1,26 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1"
+  ],
+  "id": "did:web:anatak11.github.io",
+  "verificationMethod": [
+    {
+      "id": "#key-0",
+      "type": "JsonWebKey2020",
+      "controller": "did:web:anatak11.github.io",
+      "publicKeyJwk": {
+        "kty": "EC",
+        "crv": "secp256k1",
+        "x": "Yig/EbX2oDhIj6NCqN2kedHhUNwbygsCuVV0/7i0clg=",
+        "y": "Fx25mMMhPswrKeNBvrSJDCh1x3QUNJpPFhmbVHbK7ek="
+      }
+    }
+  ],
+  "authentication": [
+    "did:web:anatak11.github.io#owner"
+  ],
+  "assertionMethod": [
+    "did:web:anatak11.github.io#owner"
+  ]
+}
