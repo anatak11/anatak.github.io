@@ -1,1 +1,36 @@
-
+{
+  "@context": [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1"
+  ],
+  "id": "did:web:anatak.github.io:QA",
+  "verificationMethod": [
+    {
+      "id": "#key-0",
+      "type": "JsonWebKey2020",
+      "controller": "did:web:anatak.github.io:QA",
+      "publicKeyJwk": {
+        "kty": "EC",
+        "crv": "secp256k1",
+        "x": "Yig/EbX2oDhIj6NCqN2kedHhUNwbygsCuVV0/7i0clg=",
+        "y": "Fx25mMMhPswrKeNBvrSJDCh1x3QUNJpPFhmbVHbK7ek="
+      }
+    }
+  ],
+  "authentication": [
+    "did:web:anatak.github.io:QA#owner"
+  ],
+  "assertionMethod": [
+    "did:web:anatak.github.io:QA#owner"
+  ],
+    "service": [{
+    "id":"#credential-agent-operator-1",
+    "type": "VlcCredentialAgentOperator_v1", 
+    "serviceEndpoint": "https://qaagent.velocitycareerlabs.io"
+	}, 
+	{
+    "id":"#vlc-career-issuer-v-1-1",
+    "type": "VlcCareerIssuer_v1", 
+    "serviceEndpoint": "https://qaagent.velocitycareerlabs.io"
+  }]
+}
